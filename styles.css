@@ -1,0 +1,637 @@
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 1.5cm;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to right, black, blue);
+  width: 100%;
+  padding: 1.4rem 8%;
+  position: fixed;
+  z-index: 1000;
+  padding: 15px;
+}
+.navbar a {
+  color: rgba(226, 226, 233, 0.949);
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+.navbar a:hover {
+  background-color: rgb(1, 255, 242);
+  color: black;
+  border-radius: 20px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-top: 1cm;
+  height: 3.9cm;
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 16px;
+  width: 3.3cm;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+  z-index: 5;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(1, 255, 242);
+  border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.kostdown {
+  display: inline-block;
+}
+
+.kostdown-content {
+  margin-top: 1cm;
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 16px;
+  width: 2.5cm;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+  z-index: 3;
+  border-radius: 20px;
+  height: 100px;
+}
+
+.kostdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+
+.kostdown-content a:hover {
+  margin-top: 5px;
+  background-color: rgb(1, 255, 242);
+}
+
+.kostdown:hover .kostdown-content {
+  display: block;
+}
+
+.produkdown {
+  display: inline-block;
+}
+
+.produkdown-content {
+  margin-top: 1cm;
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 16px;
+  width: 2.5cm;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+  z-index: 3;
+  border-radius: 20px;
+}
+
+.produkdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+
+.produkdown-content a:hover {
+  background-color: rgb(1, 255, 242);
+}
+
+.produkdown:hover .produkdown-content {
+  display: block;
+}
+
+.OK {
+  width: 40;
+  height: 40;
+  border-radius: 20%;
+  margin-left: 1%;
+  margin-right: 0%;
+}
+.navbar .logo {
+  font-style: italic;
+  color: rgb(237, 237, 245);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 0cm;
+  margin-right: auto;
+  pointer-events: none;
+}
+.navbar span {
+  color: orange;
+}
+.body {
+  position: relative;
+}
+.body img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.img-overlay {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-25%, -35%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 50px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-overlay:hover {
+  transform: translate(-25%, -25%) scale(1.2);
+  cursor: pointer;
+}
+
+.form {
+  position: absolute;
+  margin-top: 2cm;
+  transform: translate(-25%, -35%);
+  color: white;
+  right: 10cm;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 100px;
+  left: 7cm;
+}
+.body h1 {
+  font-family: "Lugrasimo", sans-serif;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 0.5%;
+  margin-left: 70%;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+}
+
+.form-control {
+  margin-right: 700%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-right: 8px;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+}
+
+.btn-light {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgb(27, 43, 42);
+}
+
+.btn-light:hover {
+  background-color: rgb(1, 255, 242);
+  color: black;
+}
+
+/* =========================Tentang======================= */
+
+.bg-tentang {
+  background-color: rgb(3, 242, 250);
+  min-height: 80px;
+}
+.tabel-tentang {
+  position: absolute;
+  top: 40%;
+  left: 13%;
+  transform: translate(-25%, -35%);
+  color: white;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 35px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tabel-tentang:hover {
+  transform: translate(-25%, -20%) scale(1.2);
+  cursor: pointer;
+}
+
+.img-tentang {
+  width: 8cm;
+}
+
+.tabel-kata {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-25%, -35%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.tabel-kata h1 {
+  margin-top: 1cm;
+  font-style: unset;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.H-maps {
+  bottom: -90vh;
+  position: relative;
+  padding: 100px;
+  background-size: cover;
+}
+
+/* =========================kost putra======================= */
+.Tombol {
+  position: absolute;
+  text-align: center;
+  bottom: 1.9cm;
+  margin-left: -1cm;
+  left: 17%;
+  width: 56cm;
+  transform: translate(-25%, -35%);
+  color: white;
+  height: 1cm;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.booking-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.booking-btn:hover {
+  background-color: #c42e27;
+}
+
+.gender-cost {
+  position: absolute;
+  margin-left: 16cm;
+  top: 7%;
+  color: orange;
+  height: 10cm;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.tabel-kmr1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-25%, -35%);
+  color: white;
+  height: 10cm;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+.tabel-kmr1:hover {
+  transform: translate(-25%, -40%);
+  cursor: pointer;
+}
+
+.tabel-kmr2 {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  transform: translate(-25%, -35%);
+  color: white;
+  height: 10cm;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+.tabel-kmr2:hover {
+  transform: translate(-25%, -40%);
+  cursor: pointer;
+}
+
+.tabel-kmr3 {
+  position: absolute;
+  top: 40%;
+  left: 58%;
+  transform: translate(-25%, -35%);
+  color: white;
+  height: 10cm;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+.tabel-kmr3:hover {
+  transform: translate(-25%, -40%);
+  cursor: pointer;
+}
+
+.tabel-kmr4 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-25%, -35%);
+  color: white;
+  height: 10cm;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 20px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+.tabel-kmr4:hover {
+  transform: translate(-25%, -40%);
+  cursor: pointer;
+}
+
+.img-kamar {
+  width: 5cm;
+  height: 5cm;
+  border-radius: 80%;
+}
+
+/* ======= COCNTACT NOW========= */
+
+.gbr {
+  margin-top: 1.7cm;
+  text-align: center;
+  margin-bottom: 0.5cm;
+  padding: 1px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gbr:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.call-gambar form {
+  text-align: center;
+}
+
+.call-gambar label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.call-gambar input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.Label-pesan {
+  margin-top: 1cm;
+  text-align: center;
+}
+
+.footer {
+  background-color: #7ec4cc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 1cm;
+  width: 100%;
+}
+
+.container {
+  width: 6%;
+  margin: 0 auto;
+}
+
+.tbl-contact {
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #000000;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: #007bff;
+}
+
+.tbl-contact:hover {
+  background-color: #c42e27;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 40%;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0.5cm;
+}
+
+.call-gambar {
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 0.6;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-whatsapp {
+  background: #14bb38;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(221, 36, 123);
+  color: white;
+}
+
+/* ==============Madu================== */
+
+.tabel-produk {
+  position: absolute;
+  top: 40%;
+  left: 13%;
+  transform: translate(-25%, -35%);
+  color: white;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2.5rem;
+  padding: 60px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tabel-produk:hover {
+  transform: translate(-25%, -20%) scale(1.2);
+  cursor: pointer;
+}
+
+.img-produk {
+  width: 8cm;
+}
+
+.kata-produk {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-25%, -35%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2.3rem;
+  padding: 20px;
+}
+
+.kata-produk.Tombol-Produk {
+  text-align: center;
+  transform: translate(-25%, -35%);
+  color: white;
+  margin-bottom: 0%;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ======================== TEH============================= */
+
+.tabel-Teh {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  transform: translate(-25%, -35%);
+  color: white;
+  background-color: rgb(27, 124, 189);
+  text-align: center;
+  border-radius: 10%;
+  font-size: 2rem;
+  padding: 60px;
+  box-shadow: 0px 5px 20px 0px rgb(27, 43, 42);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tabel-Teh:hover {
+  transform: translate(-25%, -20%) scale(1.2);
+  cursor: pointer;
+}
+
+.img-Teh {
+  width: 8cm;
+}
+
+.kata-Teh {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  width: 22cm;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 22px;
+}
+
+.kata-Teh.Tombol-Teh {
+  position: absolute;
+  text-align: center;
+  transform: translate(-25%, -35%);
+  color: white;
+  border-radius: 10%;
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Teh-Sosro {
+  margin-top: 100%;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .tabel-tentang {
+    width: 9px;
+  }
+}
